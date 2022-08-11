@@ -1,7 +1,26 @@
+.lmj-shopping-list {
+	width: 100%;
+}
+
 .lmj-plant-list {
 	list-style-type: none;
 	padding: 32px;
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 800px;
+	justify-content: center;
+}
+
+.lmj-shop-toggle-button {
+	background: green;
+	color: white;
+	font-size: 14px;
+	padding-left: 12px;
+    padding-right: 12px;
+	padding-top: 8px;
+    padding-bottom: 8px;
+	border-radius: 0.25rem;
+	border: 1px solid transparent;
+	user-select: none;
+	cursor: pointer;
+	display: inline-block;
 }
