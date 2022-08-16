@@ -31,7 +31,19 @@
 }
 
 .lmj-cart-closed > button {
-	color: black;
+	color: white;
+	font-size: 14px;
+	padding-left: 12px;
+    padding-right: 12px;
+	padding-top: 8px;
+    padding-bottom: 8px;
+	border-radius: 0.25rem;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.lmj-cart-closed > button:hover{
+	background-color: #2b9ba3;
 }
 
 .lmj-cart-shop {
