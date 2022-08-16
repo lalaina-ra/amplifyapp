@@ -20,11 +20,9 @@ function Cart({ cart, updateCart }) {
                     <h2>Shopping cart</h2>
                     <ul>
                         {cart.map(({name, price, amount}, index) => (
-                            <li>
-                              <div key={`${name}`-`${index}`}>                                
-                                {name} {price}€ x {amount}                             
-                              </div>     
-                            </li>
+                            <li key={`${name}-${index}`}>                           
+                                {name} {price}€ x {amount}   
+                            </li>                               
                                                   
                         ))}                    
                     </ul> 
