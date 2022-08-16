@@ -11,7 +11,7 @@
 }
 
 .lmj-shop-toggle-button {
-	background: green;
+	background-color: #31abb4;
 	color: white;
 	font-size: 14px;
 	padding-left: 12px;
@@ -20,7 +20,8 @@
     padding-bottom: 8px;
 	border-radius: 0.25rem;
 	border: 1px solid transparent;
-	user-select: none;
 	cursor: pointer;
-	display: inline-block;
+}
+.lmj-shop-toggle-button:hover {
+	background-color: #2b9ba3;
 }

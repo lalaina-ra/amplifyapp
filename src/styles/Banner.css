@@ -10,10 +10,12 @@
 }
 .lmj-title {
 	padding-left: 32px;
+	text-align: left;
 }
 
 .lmj-logo {
 	height: 45px;
 	width: 45px;
+	text-align: left;
 }
 

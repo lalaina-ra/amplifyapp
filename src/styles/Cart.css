@@ -1,6 +1,6 @@
 .lmj-cart {
 	color: white;
-	background-color: #31b572;
+	background-color: #31abb4;
 	padding: 32px;
 	display: flex;
 	flex-direction: column;
@@ -14,7 +14,7 @@
 }
 
 .lmj-cart-toggle-button {
-	background: none;
+	background: #31abb4;
 	outline: none;
 	border: none;
 	font-weight: 600;
@@ -32,4 +32,10 @@
 
 .lmj-cart-closed > button {
 	color: black;
+}
+
+.lmj-cart-shop {
+	content: #e547;
+	height: 15px;
+	width: 15px;
 }

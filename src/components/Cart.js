@@ -13,11 +13,11 @@ function Cart({ cart, updateCart }) {
     return isOpen ? (
         <div className='lmj-cart'>
             <button className='lmj-cart-toggle-button' 
-            onClick={() => setIsOpen(false)}>Fermer</button>
+            onClick={() => setIsOpen(false)}>Close</button>
             
             {cart.length > 0 ?(
                 <div>
-                    <h2>Panier</h2>
+                    <h2>Shopping cart</h2>
                     <ul>
                         {cart.map(({name, price, amount}, index) => (
                             <li>
@@ -32,13 +32,13 @@ function Cart({ cart, updateCart }) {
                     <button onClick={() => updateCart([])}>Vider le panier</button>                                                       
                 </div>
             ) : (
-                <div>Votre panier est vide</div>
+                <div>Your shopping cart is empty</div>
             )}                
         </div>
     ) : (
         <div className='lmj-cart-closed'>
             <button className='lmj-cart-toggle-button' 
-            onClick={() => setIsOpen(true)}>Ouvrir le panier</button>
+            onClick={() => setIsOpen(true)}>🛒 Shopping cart</button>
         </div>
     )
             

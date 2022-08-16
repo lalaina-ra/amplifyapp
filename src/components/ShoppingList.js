@@ -46,7 +46,7 @@ function ShoppingList({ cart, updateCart }) {
                                     light={light}
                                     price={price} 
                                 />
-                                <button onClick={() => addToCart(name, price)} className='lmj-shop-toggle-button'>Add</button>
+                                <button onClick={() => addToCart(name, price)} className='lmj-shop-toggle-button'>Add to cart</button>
                             </div>
                         ) : null
                     )}

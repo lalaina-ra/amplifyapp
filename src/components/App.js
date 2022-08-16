@@ -8,17 +8,17 @@ import '../styles/Layout.css'
 
 
 function App() {
-  const savedCart = localStorage.getItem('cart')
-	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
+  const savedCart = localStorage.getItem('cart') //read localStorage with getItem
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])  
 	useEffect(() => {
-		localStorage.setItem('cart', JSON.stringify(cart))
+		localStorage.setItem('cart', JSON.stringify(cart)) //add an enter with setItem
 	}, [cart])
 
   return (
     <div>
       <Banner>
           <img src={logo} alt='La maison jungle' className='lmj-logo' />
-          <h1 className='lmj-title'>La maison jungle</h1>
+          <h1 className='lmj-title'>GreenPlant Store</h1>
       </Banner>
       <div className='lmj-layout-inner'>
         <Cart cart={cart} updateCart={updateCart} />
