@@ -5,6 +5,7 @@ import '../styles/Cart.css'
 function Cart({ cart, updateCart }) {
     const [isOpen, setIsOpen] = useState(true)
     const total = cart.reduce((acc, plantType) => acc + plantType.amount * plantType.price,0)
+    const amountTotal = cart.reduce((acc, plantType) => acc + plantType.amount,0)
 
     useEffect(() => {
         document.title =`GreenPlant: ${total}€ d'achats`
@@ -36,7 +37,9 @@ function Cart({ cart, updateCart }) {
     ) : (
         <div className='lmj-cart-closed'>
             <button className='lmj-cart-toggle-button' 
-            onClick={() => setIsOpen(true)}>🛒 Shopping cart</button>
+            onClick={() => setIsOpen(true)}>🛒 Shopping cart
+            <span className='lmj-cart-count'>{amountTotal}</span>
+            </button>
         </div>
     )
             

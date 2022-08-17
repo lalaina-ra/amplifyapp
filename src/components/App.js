@@ -20,9 +20,9 @@ function App() {
           <img src={lg} alt='La maison jungle' className='lmj-logo' />
           <h1 className='lmj-title'>GreenPlant Store</h1>
       </Banner>
-      <div className='lmj-layout-inner'>
-        <Cart cart={cart} updateCart={updateCart} />
+      <div className='lmj-layout-inner'>        
         <ShoppingList cart={cart} updateCart={updateCart} />
+        <Cart cart={cart} updateCart={updateCart} />
       </div>      
       <Footer/>
     </div>
