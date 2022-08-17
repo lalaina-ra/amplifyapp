@@ -25,6 +25,10 @@
 	align-self: flex-end;
 }
 
+.lmj-cart-toggle-button:hover {
+	color: black;
+}
+
 .lmj-cart-closed {
 	padding: 32px;
 	width: 300px;
@@ -44,6 +48,7 @@
 
 .lmj-cart-closed > button:hover{
 	background-color: #2b9ba3;
+	color: white;
 }
 
 .lmj-cart-shop {
