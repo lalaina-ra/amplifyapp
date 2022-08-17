@@ -16,13 +16,15 @@ function App() {
 
   return (
     <div>
-      <Banner>
-          <img src={lg} alt='La maison jungle' className='lmj-logo' />
+      <div className='lmj-header'>
+        <Banner >
+          <img src={lg} alt='GreenPlant Store' className='lmj-logo' />
           <h1 className='lmj-title'>GreenPlant Store</h1>
-      </Banner>
-      <div className='lmj-layout-inner'>        
-        <ShoppingList cart={cart} updateCart={updateCart} />
+        </Banner>
         <Cart cart={cart} updateCart={updateCart} />
+      </div>      
+      <div className='lmj-layout-inner'>        
+        <ShoppingList cart={cart} updateCart={updateCart} />        
       </div>      
       <Footer/>
     </div>
