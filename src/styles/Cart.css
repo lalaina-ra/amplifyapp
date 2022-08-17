@@ -66,12 +66,30 @@
 	height: 20px;
 	line-height: 20px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
 	background-color: palevioletred;
 	padding-left: 8px;
 	padding-right: 8px;
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding-top: 4.5px;
+	padding-bottom: 4.5px;
 	margin-left: 12px;
+}
+
+.lmj-cart-corbeille{
+	background: rgb(214, 25, 25);
+	outline: none;
+	border: none;
+	border-radius: 0.25rem;
+	font-weight: 600;
+	cursor: pointer;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: white;	
+}
+
+.lmj-cart-corbeille:hover{
+	background-color: rgb(201, 18, 18);
 }

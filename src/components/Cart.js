@@ -18,17 +18,16 @@ function Cart({ cart, updateCart }) {
             
             {cart.length > 0 ?(
                 <div>
-                    <h2>Shopping cart</h2>
+                    <h2>Shopping cart  <span className='lmj-cart-count'>{amountTotal}</span></h2>
                     <ul>
                         {cart.map(({name, price, amount}, index) => (
                             <li key={`${name}-${index}`}>                           
-                                {name} {price}€ x {amount}   
-                            </li>                               
-                                                  
+                                {name} {price}€ x {amount}
+                            </li>                                                       
                         ))}                    
                     </ul> 
                         <h3>Total : {total}€</h3>
-                    <button onClick={() => updateCart([])}>Vider le panier</button>                                                       
+                    <button className='lmj-cart-corbeille' onClick={() => updateCart([])}>Delete all</button>                                                       
                 </div>
             ) : (
                 <div>Your shopping cart is empty</div>
